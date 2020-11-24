@@ -1,7 +1,7 @@
 {
-  "name": "find-your-dish",
+  "name": "mealfinder",
   "version": "1.0.0",
-  "description": "Web app which helps to find your favorite meals",
+  "description": "mealfinder",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -12,14 +12,7 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "keywords": [
-    "meals",
-    "finder",
-    "dishes",
-    "finder",
-    "api"
-  ],
-  "author": "Dawid Grudziecki",
+  "author": "Dawid",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
