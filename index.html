@@ -18,27 +18,115 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Meal Finder</h1>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i></button
+      ><button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <nav>
+      <div class="logo">
+        <img
+          src="https://randomuser.me/api/portraits/women/45.jpg"
+          alt="user"
+        />
+      </div>
+      <ul class="ul-sidebar">
+        <li>
+          <button class="ul-btn-dark"><a href="#">Sign in</a></button>
+        </li>
+        <li>
+          <ul>
+            <li><a href="#">Create a company account</a></li>
+            <li><a href="#">Add your restaurant</a></li>
+            <li><a href="#">Sign up for deliveries</a></li>
+            <li><a href="#">In the app, the choice is even greater.</a></li>
+            <li><a href="#">Iphone</a></li>
+            <li><a href="#">Android</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="finder">
+      <h1>Dave Eats</h1>
       <div class="flex">
         <form class="flex" id="submit">
           <input
             type="text"
             id="search"
-            placeholder="Search for meals or keywords"
+            placeholder="Hungry? Type in an English dish"
           />
           <button class="search-btn" type="submit">
             <i class="fas fa-search"></i>
+            <i class="fas fa-pizza-slice"></i>
+            <span class="tooltiptext">Soon in your mouth😋</span>
           </button>
         </form>
         <button class="random-btn" id="random">
           <i class="fas fa-random"></i>
         </button>
       </div>
+    </section>
 
+    <div class="container">
       <div id="result-heading"></div>
       <div id="meals" class="meals"></div>
       <div id="single-meal"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

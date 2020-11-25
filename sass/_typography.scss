@@ -1,27 +1,62 @@
+h1 {
+  margin: 3rem 0 3rem;
+  font-size: 4.5rem;
+  letter-spacing: 0.5px;
+}
+
 input,
 button {
   border: 1px solid #dedede;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  font-size: 14px;
-  padding: 8px 10px;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem;
   margin: 0;
 }
 
 input[type="text"] {
-  width: 300px;
+  width: 35rem;
+  padding: 1.25rem;
+  outline: none;
 
   @media only screen and (max-width: $bp-small) {
     width: 100%;
   }
 }
 
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.search-btn:hover .tooltiptext {
+  visibility: visible;
+}
+
 .search-btn {
+  position: relative;
   cursor: pointer;
   border-left: 0;
   border-radius: 0;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.search-btn i {
+  font-size: 2rem;
+  transition: scale 0.1s;
+}
+
+.search-btn:hover i {
+  scale: 1.1;
 }
 
 .random-btn {

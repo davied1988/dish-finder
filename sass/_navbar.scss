@@ -1,0 +1,41 @@
+nav {
+  // |Proper backgroound
+  background-color: $color-white;
+  border-right: 2px solid #dedede;
+  color: $color-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 2rem;
+  // color: $color-black;
+}
+
+nav ul li a {
+  color: $color-black;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
